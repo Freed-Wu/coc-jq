@@ -1,11 +1,11 @@
-import { workspace, ExtensionContext } from 'vscode';
+import { workspace, ExtensionContext, Thenable } from 'coc.nvim';
 
 import {
 	LanguageClient,
 	LanguageClientOptions,
 	ServerOptions,
 	TransportKind
-} from 'vscode-languageclient/node';
+} from 'coc.nvim';
 
 let client: LanguageClient;
 
