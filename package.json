@@ -1,5 +1,5 @@
 {
-	"name": "vscode-jq",
+	"name": "coc-jq",
 	"description": "jq extension for VSCode",
 	"author": "Mattias Wadman",
 	"license": "MIT",
@@ -7,22 +7,23 @@
 	"version": "0.0.0",
 	"repository": {
 		"type": "git",
-		"url": "https://github.com/wader/vscode-jq"
+		"url": "https://github.com/Freed-Wu/coc-jq"
 	},
 	"publisher": "dummy",
 	"categories": [
 		"Programming Languages"
 	],
 	"keywords": [
+		"coc.nvim",
 		"multi-root ready"
 	],
 	"engines": {
-		"vscode": "^1.43.0"
+		"coc": "^0.0.82"
 	},
 	"activationEvents": [
 		"onLanguage:jq"
 	],
-	"main": "./client/out/extension",
+	"main": "./client/out/extension.js",
 	"contributes": {
 		"languages": [
 			{
@@ -49,14 +50,16 @@
 	},
 	"scripts": {
 		"vscode:prepublish": "npm run compile",
+		"prepack": "tsc -p client",
 		"compile": "tsc -b",
 		"watch": "tsc -b -w",
 		"postinstall": "cd client && npm install && cd .."
 	},
 	"devDependencies": {
-		"@types/node": "^12.12.0",
+		"@types/node": "^16.18.0",
 		"@typescript-eslint/eslint-plugin": "^4.23.0",
 		"@typescript-eslint/parser": "^4.23.0",
+		"coc.nvim": "^0.0.83-next.18",
 		"eslint": "^7.26.0",
 		"typescript": "^4.3.5"
 	}

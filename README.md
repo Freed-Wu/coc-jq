@@ -1,5 +1,22 @@
 # vscode-jq
 
+Ported from [vscode-jq](https://github.com/wader/vscode-jq).
+
+## Install
+
+- [coc-marketplace](https://github.com/fannheyward/coc-marketplace)
+- [npm](https://www.npmjs.com/package/coc-jq)
+- vim:
+
+```vim
+" command line
+CocInstall coc-jq
+" or add the following code to your vimrc
+let g:coc_global_extensions = ['coc-jq', 'other coc-plugins']
+```
+
+---
+
 jq extension for VSCode
 
 It provides:

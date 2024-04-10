@@ -1,7 +1,8 @@
+*.tgz
 .DS_Store
 npm-debug.log
 Thumbs.db
-*/node_modules/
+node_modules/
 */out/
 */.vs/
 tsconfig.lsif.json
